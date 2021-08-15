@@ -1,9 +1,10 @@
 ---
-valuation: "data: {\"current\":31,\"last\":4,\"id\":\"valuation\",\"updatedAt\":1629016761471}\n\n"
-karma: "data: {\"current\":159123,\"last\":15625,\"id\":\"karma\",\"updatedAt\":1629016761471}\n\n"
-synergy: "data: {\"value\":44,\"id\":\"synergy\",\"updatedAt\":1629016761471}\n\n"
-convergence: "data: {\"points\":[{\"x\":81,\"y\":4},{\"x\":82,\"y\":43},{\"x\":83,\"y\":45},{\"x\":84,\"y\":44},{\"x\":85,\"y\":48},{\"x\":86,\"y\":26},{\"x\":87,\"y\":23},{\"x\":88,\"y\":2},{\"x\":89,\"y\":33},{\"x\":90,\"y\":47}],\"id\":\"convergence\",\"updatedAt\":1629016761471}\n\n"
-buzzwords: "data: {\"items\":[{\"label\":\"Streamlininess\",\"value\":10},{\"label\":\"Synergy\",\"value\":15},{\"label\":\"Enterprise\",\"value\":11},{\"label\":\"Leverage\",\"value\":8},{\"label\":\"Web
-  2.0\",\"value\":7},{\"label\":\"Exit strategy\",\"value\":5},{\"label\":\"Paradigm
-  shift\",\"value\":12},{\"label\":\"Turn-key\",\"value\":6},{\"label\":\"Pivoting\",\"value\":6}],\"id\":\"buzzwords\",\"updatedAt\":1629016761471}\n\n"
+valuation: "data: {\"current\":74,\"last\":1,\"id\":\"valuation\",\"updatedAt\":1629023286328}\n\n"
+karma: "data: {\"current\":55102,\"last\":114270,\"id\":\"karma\",\"updatedAt\":1629023286328}\n\n"
+synergy: "data: {\"value\":60,\"id\":\"synergy\",\"updatedAt\":1629023286328}\n\n"
+convergence: "data: {\"points\":[{\"x\":928,\"y\":34},{\"x\":929,\"y\":32},{\"x\":930,\"y\":0},{\"x\":931,\"y\":46},{\"x\":932,\"y\":43},{\"x\":933,\"y\":9},{\"x\":934,\"y\":38},{\"x\":935,\"y\":14},{\"x\":936,\"y\":11},{\"x\":937,\"y\":33}],\"id\":\"convergence\",\"updatedAt\":1629023286628}\n\n"
+buzzwords: "data: {\"items\":[{\"label\":\"Synergy\",\"value\":20},{\"label\":\"Turn-key\",\"value\":13},{\"label\":\"Pivoting\",\"value\":14},{\"label\":\"Leverage\",\"value\":3},{\"label\":\"Exit
+  strategy\",\"value\":26},{\"label\":\"Streamlininess\",\"value\":2},{\"label\":\"Paradigm
+  shift\",\"value\":11},{\"label\":\"Enterprise\",\"value\":15},{\"label\":\"Web 2.0\",\"value\":13}],\"id\":\"buzzwords\",\"updatedAt\":1629023286628}\n\n"
 welcome: "data: {\"text\":\"Hey, Look what I can do!\",\"id\":\"welcome\",\"updatedAt\":1629016744421}\n\n"
+stock_quote_aapl: "data: {\"current\":149.1,\"last\":149.31,\"id\":\"stock_quote_aapl\",\"updatedAt\":1629023232943}\n\n"
