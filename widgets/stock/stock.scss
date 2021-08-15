@@ -1,0 +1,46 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #47bbb3;
+$value-color:       #fff;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$moreinfo-color:    rgba(255, 255, 255, 0.7);
+
+// ----------------------------------------------------------------------------
+// Widget-number styles
+// ----------------------------------------------------------------------------
+.widget-stock {
+
+    background-color: $background-color;
+
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .title {
+        color: $title-color;
+    }
+
+    .value {
+        color: $value-color;
+        margin-bottom: 0px;
+    }
+
+    .change-rate {
+        font-weight: 500;
+        font-size: 20px;
+        color: $value-color;
+        text-align: right;
+    }
+
+    .more-info {
+        color: $moreinfo-color;
+    }
+
+    .updated-at {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+}

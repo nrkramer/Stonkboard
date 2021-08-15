@@ -1,0 +1,20 @@
+<div style="position:absolute; top:0px; left:0px; width:100%;">
+    <center>
+        <img class="logo" data-bind-src="image" style="margin-top:10px;" />
+    </center>
+    <div style="margin:5px 20px 20px 20px;">
+        <h1 class="title" data-bind="title" style="float:left;"></h1>
+        <div style="float:right;">
+            <h1 class="value" data-bind="current | shortenedNumber | prepend prefix | append suffix"></h1>
+            <p class="change-rate">
+              <i data-bind-class="arrow"></i><span data-bind="difference"></span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+<p class="more-info" data-bind="moreinfo"></p>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
