@@ -1,6 +1,5 @@
 <script type='text/javascript'>
 $(function() {
-  Dashing.gridsterLayout('[{"col":1,"row":2,"size_x":2,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":2},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":2,"size_y":1}]')
   Dashing.widget_base_dimensions = [370, 340]
   Dashing.numColumns = 5
 });
@@ -9,36 +8,49 @@ $(function() {
 <% content_for(:title) { "Stocks" } %>
 
 <div class="gridster">
-  <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+  <ul>    
+    <li data-row="1" data-col="1" data-sizex="5" data-sizey="1">
+      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
+    </li>
+    
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
       <div data-id="stock_quote_aapl"
            data-view="Stock"
+           data-name="<%= @company_info['AAPL'][:name] %>"
+           data-symbol="<%= @company_info['AAPL'][:symbol] %>"
            data-image="<%= @company_info['AAPL'][:logo] %>"
-           data-title="<%= @company_info['AAPL'][:name] %>"
-           style="background-color:#666666;"
+           style="background-color:#111111;"
            data-prefix="$"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
       <div data-id="stock_quote_tsla"
            data-view="Stock"
+           data-name="<%= @company_info['MSFT'][:name] %>"
+           data-symbol="<%= @company_info['MSFT'][:symbol] %>"
+           data-image="<%= @company_info['MSFT'][:logo] %>"
+           style="background-color:#111111;"
+           data-prefix="$"></div>
+    </li>
+    
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="stock_quote_msft"
+           data-view="Stock"
+           data-name="<%= @company_info['TSLA'][:name] %>"
+           data-symbol="<%= @company_info['TSLA'][:symbol] %>"
            data-image="<%= @company_info['TSLA'][:logo] %>"
-           data-title="<%= @company_info['TSLA'][:name] %>"
-           style="background-color:#666666;"
+           style="background-color:#111111;"
            data-prefix="$"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
+    <li data-row="2" data-col="5" data-sizex="1" data-sizey="2">
+      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
     </li>
+    
   </ul>
   <center>
 </div>

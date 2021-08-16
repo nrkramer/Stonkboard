@@ -13,7 +13,8 @@ require 'iex-ruby-client'
 # 2. IEX API key is read in from the file point at by the environment variable $IEX_API_KEY_FILE
 watchlist_symbols = [
     'AAPL',
-    'TSLA'
+    'TSLA',
+    'MSFT'
 ]
 iex_api_key_file = ENV['IEX_API_KEY_FILE']
 if iex_api_key_file != ''
@@ -47,6 +48,7 @@ before do
         logo = client.logo(symbol)
         
         @company_info[symbol] = {
+            symbol: symbol,
             name: stats.company_name,
             logo: logo.url
         }

@@ -2,10 +2,11 @@
 valuation: "data: {\"current\":31,\"last\":9,\"id\":\"valuation\",\"updatedAt\":1629067741329}\n\n"
 karma: "data: {\"current\":29032,\"last\":658,\"id\":\"karma\",\"updatedAt\":1629067741329}\n\n"
 synergy: "data: {\"value\":94,\"id\":\"synergy\",\"updatedAt\":1629067741329}\n\n"
-convergence: "data: {\"points\":[{\"x\":357,\"y\":36},{\"x\":358,\"y\":4},{\"x\":359,\"y\":34},{\"x\":360,\"y\":26},{\"x\":361,\"y\":29},{\"x\":362,\"y\":15},{\"x\":363,\"y\":29},{\"x\":364,\"y\":47},{\"x\":365,\"y\":15},{\"x\":366,\"y\":35}],\"id\":\"convergence\",\"updatedAt\":1629071764881}\n\n"
-buzzwords: "data: {\"items\":[{\"label\":\"Turn-key\",\"value\":13},{\"label\":\"Exit
-  strategy\",\"value\":20},{\"label\":\"Streamlininess\",\"value\":4},{\"label\":\"Synergy\",\"value\":16},{\"label\":\"Web
-  2.0\",\"value\":5},{\"label\":\"Paradigm shift\",\"value\":3},{\"label\":\"Enterprise\",\"value\":14},{\"label\":\"Pivoting\",\"value\":4},{\"label\":\"Leverage\",\"value\":7}],\"id\":\"buzzwords\",\"updatedAt\":1629071764880}\n\n"
+convergence: "data: {\"points\":[{\"x\":603,\"y\":21},{\"x\":604,\"y\":36},{\"x\":605,\"y\":2},{\"x\":606,\"y\":4},{\"x\":607,\"y\":15},{\"x\":608,\"y\":14},{\"x\":609,\"y\":1},{\"x\":610,\"y\":15},{\"x\":611,\"y\":27},{\"x\":612,\"y\":14}],\"id\":\"convergence\",\"updatedAt\":1629073933278}\n\n"
+buzzwords: "data: {\"items\":[{\"label\":\"Leverage\",\"value\":11},{\"label\":\"Pivoting\",\"value\":2},{\"label\":\"Enterprise\",\"value\":14},{\"label\":\"Web
+  2.0\",\"value\":28},{\"label\":\"Exit strategy\",\"value\":8},{\"label\":\"Streamlininess\",\"value\":6},{\"label\":\"Paradigm
+  shift\",\"value\":21},{\"label\":\"Turn-key\",\"value\":28},{\"label\":\"Synergy\",\"value\":4}],\"id\":\"buzzwords\",\"updatedAt\":1629073933278}\n\n"
 welcome: "data: {\"text\":\"Hey, Look what I can do!\",\"id\":\"welcome\",\"updatedAt\":1629016744421}\n\n"
-stock_quote_aapl: "data: {\"current\":150.1,\"last\":150.31,\"id\":\"stock_quote_aapl\",\"updatedAt\":1629071709286}\n\n"
-stock_quote_tsla: "data: {\"current\":736.3,\"last\":730.9799999999999,\"id\":\"stock_quote_tsla\",\"updatedAt\":1629071709548}\n\n"
+stock_quote_aapl: "data: {\"current\":155.1,\"last\":155.31,\"id\":\"stock_quote_aapl\",\"updatedAt\":1629073928163}\n\n"
+stock_quote_tsla: "data: {\"current\":730.42,\"last\":725.28,\"id\":\"stock_quote_tsla\",\"updatedAt\":1629073928421}\n\n"
+stock_quote_msft: "data: {\"current\":295.98,\"last\":299.15000000000003,\"id\":\"stock_quote_msft\",\"updatedAt\":1629073928672}\n\n"
