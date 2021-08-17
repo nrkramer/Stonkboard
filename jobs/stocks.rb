@@ -9,18 +9,32 @@ require 'iex-ruby-client'
 
 # Config
 # ------
-# 1. List of symbols you want to track
+# 1. List of symbols you want to tracks
 # 2. IEX API key is read in from the file point at by the environment variable $IEX_API_KEY_FILE
 watchlist_symbols = [
     'AAPL',
     'TSLA',
-    'MSFT'
+    'MSFT',
+    'SOFI',
+    'ELY',
+    'AMD',
+    'XLNX',
+    'SQ'
 ]
 iex_api_key_file = ENV['IEX_API_KEY_FILE']
-if iex_api_key_file != ''
-    contents = File.read(iex_api_key_file).strip.split("\n")
-    iex_secret_key = contents[0]
-    iex_public_key = contents[1]
+if iex_api_key_file != nil
+    raw_contents = File.read(iex_api_key_file)
+    if raw_contents != nil
+        contents = raw_contents.strip.split("\n")
+        iex_secret_key = contents[0]
+        iex_public_key = contents[1]
+    end
+end
+if iex_secret_key == nil
+    iex_secret_key = ENV['IEX_API_SECRET_KEY']
+end
+if iex_public_key == nil
+    iex_public_key = ENV['IEX_API_PUBLIC_KEY']
 end
 
 IEX::Api.configure do |config|
@@ -34,7 +48,7 @@ end
 client = IEX::Api::Client.new
 
 def widget_id_for_symbol(symbol)
-    return "stock_quote_" + symbol.downcase
+    return "stock_quote_" + symbol
 end
 
 # Fetch stock data
@@ -57,6 +71,8 @@ end
 
 SCHEDULER.every '1m', :first_in => 0 do |job|
     
+    quotes = Hash.new
+    
     watchlist_symbols.each { |symbol|
         quote = client.quote(symbol)
         
@@ -69,6 +85,10 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
         end
         
         send_event(widget_id, widgetData)
-    }    
+        
+        quotes[symbol] = quote
+    }
+    
+    send_event("stock-marquee", {quotes: quotes})
 end
 
