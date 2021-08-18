@@ -9,19 +9,21 @@ require 'iex-ruby-client'
 
 # Config
 # ------
-# 1. List of symbols you want to tracks
+# 1. Watchlist tickers are read in from file pointed at by the environment variables $WATCHLIST_FILE
 # 2. IEX API key is read in from the file point at by the environment variable $IEX_API_KEY_FILE
-watchlist = {
-    'AAPL' => {},
-    'TSLA' => {},
-    'MSFT' => {},
-    'SOFI' => {},
-    'ELY' => {},
-    'AMD' => {},
-    'XLNX' => {},
-    'SQ' => {}
-}
 
+# Read in watchlist
+watchlist_file = ENV['WATCHLIST_FILE']
+watchlist_raw = File.read(watchlist_file)
+watchlist = Hash.new
+watchlist_raw.each_line do |line|
+    line = line.strip
+    if line != '' then
+        watchlist[line] = {}
+    end
+end
+
+# Read in API key
 iex_api_key_file = ENV['IEX_API_KEY_FILE']
 if iex_api_key_file != nil
     raw_contents = File.read(iex_api_key_file)
