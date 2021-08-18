@@ -45,7 +45,6 @@ class Dashing.Marquee extends Dashing.Widget
             initialized = true
         else
             for symbol, quote of quotes
-                console.log(symbol + ' ' + quote.latest_price + ' ' + quote.change_percent)
                 $(".stock-marquee-item-#{symbol}").each ->
                     set_stock_widget_data($(this), round_two(quote.latest_price), round_two(quote.change_percent))
                 

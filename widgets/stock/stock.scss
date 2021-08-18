@@ -15,8 +15,8 @@ $moreinfo-color:    rgba(255, 255, 255, 0.8);
     background-color: $background-color;
 
     .logo {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
     }
 
     .title {
@@ -44,10 +44,13 @@ $moreinfo-color:    rgba(255, 255, 255, 0.8);
 
     .more-info {
         color: $moreinfo-color;
+        position: relative;
+        margin-top: 10px;
     }
 
     .updated-at {
         color: rgba(255, 255, 255, 0.5);
+        position: relative;
     }
 
 }

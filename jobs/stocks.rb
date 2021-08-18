@@ -11,16 +11,17 @@ require 'iex-ruby-client'
 # ------
 # 1. List of symbols you want to tracks
 # 2. IEX API key is read in from the file point at by the environment variable $IEX_API_KEY_FILE
-watchlist_symbols = [
-    'AAPL',
-    'TSLA',
-    'MSFT',
-    'SOFI',
-    'ELY',
-    'AMD',
-    'XLNX',
-    'SQ'
-]
+watchlist = {
+    'AAPL' => {},
+    'TSLA' => {},
+    'MSFT' => {},
+    'SOFI' => {},
+    'ELY' => {},
+    'AMD' => {},
+    'XLNX' => {},
+    'SQ' => {}
+}
+
 iex_api_key_file = ENV['IEX_API_KEY_FILE']
 if iex_api_key_file != nil
     raw_contents = File.read(iex_api_key_file)
@@ -47,47 +48,96 @@ end
 
 client = IEX::Api::Client.new
 
-def widget_id_for_symbol(symbol)
-    return "stock_quote_" + symbol
-end
+puts("Fetching ticker info... ")
+watchlist.each do |symbol, data|
+    data[:widget_id] = 'stock_quote_' + symbol
+    data[:company_info] = Hash.new
 
-# Fetch stock data
-before do
-    @company_info = Hash.new
-    watchlist_symbols.each { |symbol|
-        widget_id = widget_id_for_symbol(symbol)
-
-        # Fetch company information
-        stats = client.key_stats(symbol)
-        logo = client.logo(symbol)
-        
-        @company_info[symbol] = {
-            symbol: symbol,
-            name: stats.company_name,
-            logo: logo.url
-        }
+    # Fetch company information
+    stats = client.key_stats(symbol)
+    logo = client.logo(symbol)
+    puts("Fetched info for " + symbol)
+    
+    data[:company_info] = {
+        name: stats.company_name,
+        logo: logo.url
     }
 end
 
-SCHEDULER.every '1m', :first_in => 0 do |job|
-    
+before do
+    @watchlist = watchlist
+end
+
+SCHEDULER.every '1m', :first_in => 0 do |job|    
     quotes = Hash.new
     
-    watchlist_symbols.each { |symbol|
+    watchlist.each do |symbol, data|
         quote = client.quote(symbol)
+        iexchart = client.chart(symbol, '1d', chart_interval: 10)
         
-        widget_id = widget_id_for_symbol(symbol)
+        # Chart data
+        labels = []
+        chartdata = {
+           data: Array.new(),
+           backgroundColor: Array.new(),
+           borderColor: Array.new(),
+           borderWidth: 1,
+           fill: 'origin',
+           pointRadius: 0
+        }
+        borderWidth = 1
+        for dp in iexchart
+            labels.append(dp.label)
+            avgPrice = (dp.high + dp.low) / 2.0
+            chartdata[:data].append(avgPrice)
+            chartdata[:backgroundColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
+            chartdata[:borderColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
+        end
+        
         widgetData = {
-            current: quote.latest_price
+            current: quote.latest_price,
+            labels: labels,
+            datasets: [ chartdata ],
+            options: {
+                title: {
+                    display: false
+                },
+                scales: {
+                    y: {
+                        suggestedMax: quote.open,
+                        suggestedMin: quote.open
+                    }
+                },
+                plugins: {
+                    annotation: {
+                        annotations: {
+                            line1: {
+                                type: 'line',
+                                scaleID: 'y',
+                                value: quote.open,
+                                borderColor: 'rgba(120, 120, 120, 0.5)',
+                                borderWidth: 2,
+                                borderDash: [5, 5]
+                            }
+                        }
+                    },
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        enabled: false
+                    }
+                }
+            }
         }
         if quote.change != 0.0
             widgetData[:last] = quote.latest_price + quote.change
         end
         
-        send_event(widget_id, widgetData)
+        send_event(data[:widget_id], widgetData)
         
         quotes[symbol] = quote
-    }
+    end
     
     send_event("stock-marquee", {quotes: quotes})
 end

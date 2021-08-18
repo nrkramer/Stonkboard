@@ -2,54 +2,343 @@
 valuation: "data: {\"current\":31,\"last\":9,\"id\":\"valuation\",\"updatedAt\":1629067741329}\n\n"
 karma: "data: {\"current\":29032,\"last\":658,\"id\":\"karma\",\"updatedAt\":1629067741329}\n\n"
 synergy: "data: {\"value\":94,\"id\":\"synergy\",\"updatedAt\":1629067741329}\n\n"
-convergence: "data: {\"points\":[{\"x\":83,\"y\":15},{\"x\":84,\"y\":18},{\"x\":85,\"y\":15},{\"x\":86,\"y\":12},{\"x\":87,\"y\":39},{\"x\":88,\"y\":5},{\"x\":89,\"y\":40},{\"x\":90,\"y\":13},{\"x\":91,\"y\":31},{\"x\":92,\"y\":31}],\"id\":\"convergence\",\"updatedAt\":1629236395614}\n\n"
-buzzwords: "data: {\"items\":[{\"label\":\"Exit strategy\",\"value\":11},{\"label\":\"Leverage\",\"value\":11},{\"label\":\"Enterprise\",\"value\":8},{\"label\":\"Paradigm
-  shift\",\"value\":10},{\"label\":\"Pivoting\",\"value\":8},{\"label\":\"Synergy\",\"value\":10},{\"label\":\"Web
-  2.0\",\"value\":4},{\"label\":\"Streamlininess\",\"value\":14},{\"label\":\"Turn-key\",\"value\":6}],\"id\":\"buzzwords\",\"updatedAt\":1629236395614}\n\n"
+convergence: "data: {\"points\":[{\"x\":83,\"y\":13},{\"x\":84,\"y\":10},{\"x\":85,\"y\":2},{\"x\":86,\"y\":48},{\"x\":87,\"y\":38},{\"x\":88,\"y\":30},{\"x\":89,\"y\":38},{\"x\":90,\"y\":5},{\"x\":91,\"y\":46},{\"x\":92,\"y\":26}],\"id\":\"convergence\",\"updatedAt\":1629259734954}\n\n"
+buzzwords: "data: {\"items\":[{\"label\":\"Enterprise\",\"value\":9},{\"label\":\"Streamlininess\",\"value\":12},{\"label\":\"Pivoting\",\"value\":8},{\"label\":\"Web
+  2.0\",\"value\":14},{\"label\":\"Turn-key\",\"value\":8},{\"label\":\"Paradigm shift\",\"value\":5},{\"label\":\"Synergy\",\"value\":10},{\"label\":\"Exit
+  strategy\",\"value\":10},{\"label\":\"Leverage\",\"value\":6}],\"id\":\"buzzwords\",\"updatedAt\":1629259734954}\n\n"
 welcome: "data: {\"text\":\"Hey, Look what I can do!\",\"id\":\"welcome\",\"updatedAt\":1629016744421}\n\n"
 stock_quote_aapl: "data: {\"current\":151.37,\"last\":153.44,\"id\":\"stock_quote_aapl\",\"updatedAt\":1629185785696}\n\n"
 stock_quote_tsla: "data: {\"current\":709.01,\"last\":678.01,\"id\":\"stock_quote_tsla\",\"updatedAt\":1629185785948}\n\n"
 stock_quote_msft: "data: {\"current\":302.7,\"last\":304.51,\"id\":\"stock_quote_msft\",\"updatedAt\":1629185786195}\n\n"
-stock-marquee: "data: {\"quotes\":{\"AAPL\":{\"avg_total_volume\":74649706,\"calculation_price\":\"iexlasttrade\",\"change\":-0.9,\"change_percent\":-0.00609,\"change_percent_s\":\"-0.61%\",\"close\":0,\"close_time\":null,\"company_name\":\"Apple
-  Inc\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1644597460957,\"iex_last_updated_t\":\"2022-02-11
-  08:37:40 -0800\",\"iex_market_percent\":0.010292706019671081,\"iex_realtime_price\":157.3,\"iex_realtime_size\":1,\"iex_volume\":986382,\"latest_price\":152.23,\"latest_source\":\"IEX
-  Last Trade\",\"latest_time\":\"August 17, 2021\",\"latest_update\":1690317012488,\"latest_update_t\":\"2023-07-25
-  13:30:12 -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":2485977037850,\"open\":0,\"open_time\":null,\"pe_ratio\":29.53,\"previous_close\":156.61,\"primary_exchange\":\"SNAQDA\",\"symbol\":\"AAPL\",\"week_52_high\":152.13,\"week_52_low\":103.48,\"ytd_change\":0.140497923579473},\"TSLA\":{\"avg_total_volume\":20119103,\"calculation_price\":\"iexlasttrade\",\"change\":-20.51,\"change_percent\":-0.0296,\"change_percent_s\":\"-2.96%\",\"close\":0,\"close_time\":null,\"company_name\":\"Tesla
-  Inc\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1637230056218,\"iex_last_updated_t\":\"2021-11-18
-  02:07:36 -0800\",\"iex_market_percent\":0.01928942996655786,\"iex_realtime_price\":670.37,\"iex_realtime_size\":10,\"iex_volume\":451111,\"latest_price\":688.22,\"latest_source\":\"IEX
-  Last Trade\",\"latest_time\":\"August 17, 2021\",\"latest_update\":1692247290062,\"latest_update_t\":\"2023-08-16
-  21:41:30 -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":681959732684,\"open\":0,\"open_time\":null,\"pe_ratio\":360.48,\"previous_close\":713.03,\"primary_exchange\":\"DAAQSN\",\"symbol\":\"TSLA\",\"week_52_high\":915.4,\"week_52_low\":332.91,\"ytd_change\":-0.05976325013593614},\"MSFT\":{\"avg_total_volume\":21205641,\"calculation_price\":\"iexlasttrade\",\"change\":-1.43,\"change_percent\":-0.00474,\"change_percent_s\":\"-0.47%\",\"close\":0,\"close_time\":null,\"company_name\":\"Microsoft
-  Corporation\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1641401453336,\"iex_last_updated_t\":\"2022-01-05
-  08:50:53 -0800\",\"iex_market_percent\":0.021990848300234345,\"iex_realtime_price\":300.17,\"iex_realtime_size\":1,\"iex_volume\":443374,\"latest_price\":307.7,\"latest_source\":\"IEX
-  Last Trade\",\"latest_time\":\"August 17, 2021\",\"latest_update\":1667110835320,\"latest_update_t\":\"2022-10-29
-  23:20:35 -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":2297207540213,\"open\":0,\"open_time\":null,\"pe_ratio\":37.87,\"previous_close\":294.7,\"primary_exchange\":\"SQDAAN\",\"symbol\":\"MSFT\",\"week_52_high\":300.14,\"week_52_low\":202.3,\"ytd_change\":0.34005965449125436},\"SOFI\":{\"avg_total_volume\":19090235,\"calculation_price\":\"iexlasttrade\",\"change\":-0.55,\"change_percent\":-0.03905,\"change_percent_s\":\"-3.90%\",\"close\":0,\"close_time\":null,\"company_name\":\"SoFi
-  Technologies Inc\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1653345472919,\"iex_last_updated_t\":\"2022-05-23
-  15:37:52 -0700\",\"iex_market_percent\":0.011932372061273643,\"iex_realtime_price\":14.11,\"iex_realtime_size\":91,\"iex_volume\":369437,\"latest_price\":14.07,\"latest_source\":\"IEX
-  Last Trade\",\"latest_time\":\"August 17, 2021\",\"latest_update\":1709631393426,\"latest_update_t\":\"2024-03-05
-  01:36:33 -0800\",\"latest_volume\":null,\"low\":0,\"market_cap\":11190412133,\"open\":0,\"open_time\":null,\"pe_ratio\":null,\"previous_close\":14.32,\"primary_exchange\":\"ADSNAQ\",\"symbol\":\"SOFI\",\"week_52_high\":25.12,\"week_52_low\":14.87,\"ytd_change\":-0.41886050585610785},\"ELY\":{\"avg_total_volume\":2056760,\"calculation_price\":\"close\",\"change\":-1.06,\"change_percent\":-0.03562,\"change_percent_s\":\"-3.56%\",\"close\":0,\"close_time\":null,\"company_name\":\"Callaway
-  Golf Co.\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1683856991064,\"iex_last_updated_t\":\"2023-05-11
-  19:03:11 -0700\",\"iex_market_percent\":0.020672766644414,\"iex_realtime_price\":29.606,\"iex_realtime_size\":1,\"iex_volume\":47091,\"latest_price\":29.6,\"latest_source\":\"Close\",\"latest_time\":\"August
-  17, 2021\",\"latest_update\":1655076189066,\"latest_update_t\":\"2022-06-12 16:23:09
-  -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":5453076638,\"open\":0,\"open_time\":null,\"pe_ratio\":9.76,\"previous_close\":30.95,\"primary_exchange\":\"HCCANYOGRN
-  E ENOCEK T XKWI.S\",\"symbol\":\"ELY\",\"week_52_high\":39.63,\"week_52_low\":15.24,\"ytd_change\":0.20447792942036766},\"AMD\":{\"avg_total_volume\":96786588,\"calculation_price\":\"iexlasttrade\",\"change\":0.07,\"change_percent\":0.00066,\"change_percent_s\":\"+0.07%\",\"close\":0,\"close_time\":null,\"company_name\":\"Advanced
-  Micro Devices Inc.\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1663260444620,\"iex_last_updated_t\":\"2022-09-15
-  09:47:24 -0700\",\"iex_market_percent\":0.008492862594798568,\"iex_realtime_price\":111.24,\"iex_realtime_size\":100,\"iex_volume\":639756,\"latest_price\":112.43,\"latest_source\":\"IEX
-  Last Trade\",\"latest_time\":\"August 17, 2021\",\"latest_update\":1651796899476,\"latest_update_t\":\"2022-05-05
-  17:28:19 -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":136765350709,\"open\":0,\"open_time\":null,\"pe_ratio\":38.99,\"previous_close\":112.73,\"primary_exchange\":\"NSADAQ\",\"symbol\":\"AMD\",\"week_52_high\":125.17,\"week_52_low\":74.4,\"ytd_change\":0.1786081306703668},\"XLNX\":{\"avg_total_volume\":3184998,\"calculation_price\":\"iexlasttrade\",\"change\":0.01,\"change_percent\":7.0e-05,\"change_percent_s\":\"+0.01%\",\"close\":0,\"close_time\":null,\"company_name\":\"Xilinx,
-  Inc.\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1706494257546,\"iex_last_updated_t\":\"2024-01-28
-  18:10:57 -0800\",\"iex_market_percent\":0.07025016682759863,\"iex_realtime_price\":144.03,\"iex_realtime_size\":103,\"iex_volume\":109413,\"latest_price\":148.03,\"latest_source\":\"IEX
-  Last Trade\",\"latest_time\":\"August 17, 2021\",\"latest_update\":1647351549702,\"latest_update_t\":\"2022-03-15
-  06:39:09 -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":36827527052,\"open\":0,\"open_time\":null,\"pe_ratio\":47.97,\"previous_close\":148.55,\"primary_exchange\":\"SADANQ\",\"symbol\":\"XLNX\",\"week_52_high\":159.13,\"week_52_low\":99.7,\"ytd_change\":0.006329657159240957},\"SQ\":{\"avg_total_volume\":10675589,\"calculation_price\":\"close\",\"change\":-2.61,\"change_percent\":-0.00981,\"change_percent_s\":\"-0.98%\",\"close\":0,\"close_time\":null,\"company_name\":\"Square
-  Inc - Class A\",\"delayed_price\":null,\"delayed_price_time\":null,\"extended_change_percent\":null,\"extended_change_percent_s\":null,\"extended_price\":null,\"extended_price_time\":null,\"high\":0,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1650815054013,\"iex_last_updated_t\":\"2022-04-24
-  08:44:14 -0700\",\"iex_market_percent\":0.028004426537266362,\"iex_realtime_price\":273.81,\"iex_realtime_size\":34,\"iex_volume\":159383,\"latest_price\":269.05,\"latest_source\":\"Close\",\"latest_time\":\"August
-  17, 2021\",\"latest_update\":1692946567545,\"latest_update_t\":\"2023-08-24 23:56:07
-  -0700\",\"latest_volume\":null,\"low\":0,\"market_cap\":111615850074,\"open\":0,\"open_time\":null,\"pe_ratio\":238.62,\"previous_close\":274.2,\"primary_exchange\":\"
-  WYE CN OEKNCEKXIHTOC GAN.SR\",\"symbol\":\"SQ\",\"week_52_high\":298.5,\"week_52_low\":135,\"ytd_change\":0.2096376222693059}},\"id\":\"stock-marquee\",\"updatedAt\":1629236353574}\n\n"
-stock_quote_AAPL: "data: {\"current\":152.23,\"last\":151.32999999999998,\"id\":\"stock_quote_AAPL\",\"updatedAt\":1629236351699}\n\n"
-stock_quote_TSLA: "data: {\"current\":688.22,\"last\":667.71,\"id\":\"stock_quote_TSLA\",\"updatedAt\":1629236351960}\n\n"
-stock_quote_MSFT: "data: {\"current\":307.7,\"last\":306.27,\"id\":\"stock_quote_MSFT\",\"updatedAt\":1629236352226}\n\n"
-stock_quote_SOFI: "data: {\"current\":14.07,\"last\":13.52,\"id\":\"stock_quote_SOFI\",\"updatedAt\":1629236352506}\n\n"
-stock_quote_ELY: "data: {\"current\":29.6,\"last\":28.540000000000003,\"id\":\"stock_quote_ELY\",\"updatedAt\":1629236352776}\n\n"
-stock_quote_AMD: "data: {\"current\":112.43,\"last\":112.5,\"id\":\"stock_quote_AMD\",\"updatedAt\":1629236353047}\n\n"
-stock_quote_XLNX: "data: {\"current\":148.03,\"last\":148.04,\"id\":\"stock_quote_XLNX\",\"updatedAt\":1629236353310}\n\n"
-stock_quote_SQ: "data: {\"current\":269.05,\"last\":266.44,\"id\":\"stock_quote_SQ\",\"updatedAt\":1629236353574}\n\n"
+stock-marquee: "data: {\"quotes\":{\"AAPL\":{\"avg_total_volume\":74633697,\"calculation_price\":\"close\",\"change\":-0.94,\"change_percent\":-0.0063,\"change_percent_s\":\"-0.63%\",\"close\":150.49,\"close_time\":1674889947588,\"company_name\":\"Apple
+  Inc\",\"delayed_price\":150.34,\"delayed_price_time\":1658057810404,\"extended_change_percent\":-0.0028,\"extended_change_percent_s\":\"-0.28%\",\"extended_price\":151.66,\"extended_price_time\":1687795091887,\"high\":156.24,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1642224473041,\"iex_last_updated_t\":\"2022-01-14
+  21:27:53 -0800\",\"iex_market_percent\":0.010427305645819862,\"iex_realtime_price\":151.34,\"iex_realtime_size\":1,\"iex_volume\":956408,\"latest_price\":152.68,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1695479120107,\"latest_update_t\":\"2023-09-23 07:25:20
+  -0700\",\"latest_volume\":96477258,\"low\":150.49,\"market_cap\":2496154110894,\"open\":153.59,\"open_time\":1671264486019,\"pe_ratio\":30.67,\"previous_close\":156.81,\"primary_exchange\":\"QANSDA\",\"symbol\":\"AAPL\",\"week_52_high\":155.87,\"week_52_low\":104.57,\"ytd_change\":0.1386473074646861},\"TSLA\":{\"avg_total_volume\":20356341,\"calculation_price\":\"close\",\"change\":-20.78,\"change_percent\":-0.0311,\"change_percent_s\":\"-3.11%\",\"close\":697.57,\"close_time\":1650063855096,\"company_name\":\"Tesla
+  Inc\",\"delayed_price\":694.39,\"delayed_price_time\":1652500279132,\"extended_change_percent\":-0.00381,\"extended_change_percent_s\":\"-0.38%\",\"extended_price\":687.7,\"extended_price_time\":1681881681273,\"high\":697.57,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1634056545054,\"iex_last_updated_t\":\"2021-10-12
+  09:35:45 -0700\",\"iex_market_percent\":0.0188914024591692,\"iex_realtime_price\":668.17,\"iex_realtime_size\":10,\"iex_volume\":452326,\"latest_price\":695.95,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1666361388901,\"latest_update_t\":\"2022-10-21 07:09:48
+  -0700\",\"latest_volume\":24359122,\"low\":680.55,\"market_cap\":664945473742,\"open\":687.98,\"open_time\":1670823466763,\"pe_ratio\":358.98,\"previous_close\":697.18,\"primary_exchange\":\"QAANSD\",\"symbol\":\"TSLA\",\"week_52_high\":902.5,\"week_52_low\":331.07,\"ytd_change\":-0.05949245154459523},\"MSFT\":{\"avg_total_volume\":21879789,\"calculation_price\":\"close\",\"change\":-1.5728,\"change_percent\":-0.00523,\"change_percent_s\":\"-0.52%\",\"close\":298.85,\"close_time\":1697119868403,\"company_name\":\"Microsoft
+  Corporation\",\"delayed_price\":300.16,\"delayed_price_time\":1655467158335,\"extended_change_percent\":0.00116,\"extended_change_percent_s\":\"+0.12%\",\"extended_price\":300.24,\"extended_price_time\":1639871313498,\"high\":306.25,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1675699791897,\"iex_last_updated_t\":\"2023-02-06
+  08:09:51 -0800\",\"iex_market_percent\":0.02241568555516696,\"iex_realtime_price\":296,\"iex_realtime_size\":1,\"iex_volume\":448464,\"latest_price\":294.43,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1708642468885,\"latest_update_t\":\"2024-02-22 14:54:28
+  -0800\",\"latest_volume\":20164669,\"low\":297.01,\"market_cap\":2300208254836,\"open\":297.01,\"open_time\":1699748297359,\"pe_ratio\":36.62,\"previous_close\":303.7541,\"primary_exchange\":\"NAQDAS\",\"symbol\":\"MSFT\",\"week_52_high\":299.15,\"week_52_low\":204.21,\"ytd_change\":0.3399234843342979},\"SOFI\":{\"avg_total_volume\":19371774,\"calculation_price\":\"close\",\"change\":-0.56,\"change_percent\":-0.03914,\"change_percent_s\":\"-3.91%\",\"close\":14.16,\"close_time\":1685629037082,\"company_name\":\"SoFi
+  Technologies Inc\",\"delayed_price\":13.921,\"delayed_price_time\":1679580520539,\"extended_change_percent\":0.01024,\"extended_change_percent_s\":\"+1.02%\",\"extended_price\":14.42,\"extended_price_time\":1646216271654,\"high\":15.3,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1669244268041,\"iex_last_updated_t\":\"2022-11-23
+  14:57:48 -0800\",\"iex_market_percent\":0.011794006059837285,\"iex_realtime_price\":13.85,\"iex_realtime_size\":91,\"iex_volume\":368565,\"latest_price\":14.2,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1670339124671,\"latest_update_t\":\"2022-12-06 07:05:24
+  -0800\",\"latest_volume\":33014316,\"low\":14.12,\"market_cap\":11335463054,\"open\":14.12,\"open_time\":1695215436257,\"pe_ratio\":null,\"previous_close\":14.92,\"primary_exchange\":\"ADQNAS\",\"symbol\":\"SOFI\",\"week_52_high\":25.84,\"week_52_low\":13.96,\"ytd_change\":-0.4161549800263251},\"ELY\":{\"avg_total_volume\":2061347,\"calculation_price\":\"close\",\"change\":-1.1,\"change_percent\":-0.03652,\"change_percent_s\":\"-3.65%\",\"close\":29.1,\"close_time\":1680150924785,\"company_name\":\"Callaway
+  Golf Co.\",\"delayed_price\":29.5,\"delayed_price_time\":1663480897189,\"extended_change_percent\":-0.0018,\"extended_change_percent_s\":\"-0.18%\",\"extended_price\":28.97,\"extended_price_time\":1682882362411,\"high\":30.5,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1643597236873,\"iex_last_updated_t\":\"2022-01-30
+  18:47:16 -0800\",\"iex_market_percent\":0.02107885411821933,\"iex_realtime_price\":28.987,\"iex_realtime_size\":1,\"iex_volume\":45160,\"latest_price\":29.2,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1695253097737,\"latest_update_t\":\"2023-09-20 16:38:17
+  -0700\",\"latest_volume\":2227455,\"low\":29.1,\"market_cap\":5515426538,\"open\":30.5,\"open_time\":1679943917652,\"pe_ratio\":9.97,\"previous_close\":29.94,\"primary_exchange\":\"SAN
+  .O N TKOCI CERENHYEGXWKC\",\"symbol\":\"ELY\",\"week_52_high\":38.52,\"week_52_low\":14.75,\"ytd_change\":0.20729976731576438},\"AMD\":{\"avg_total_volume\":100967516,\"calculation_price\":\"close\",\"change\":0.08,\"change_percent\":0.00077,\"change_percent_s\":\"+0.08%\",\"close\":111.83,\"close_time\":1642668826833,\"company_name\":\"Advanced
+  Micro Devices Inc.\",\"delayed_price\":111.64,\"delayed_price_time\":1670590230860,\"extended_change_percent\":-0.0027,\"extended_change_percent_s\":\"-0.27%\",\"extended_price\":109.24,\"extended_price_time\":1675040022985,\"high\":113.1,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1705479163083,\"iex_last_updated_t\":\"2024-01-17
+  00:12:43 -0800\",\"iex_market_percent\":0.00876587435544895,\"iex_realtime_price\":110.63,\"iex_realtime_size\":102,\"iex_volume\":637328,\"latest_price\":111.25,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1703869814159,\"latest_update_t\":\"2023-12-29 09:10:14
+  -0800\",\"latest_volume\":74239139,\"low\":108.27,\"market_cap\":133761044736,\"open\":108.48,\"open_time\":1685547048941,\"pe_ratio\":39.31,\"previous_close\":111.17,\"primary_exchange\":\"NASAQD\",\"symbol\":\"AMD\",\"week_52_high\":127.66,\"week_52_low\":76,\"ytd_change\":0.17680122159470243},\"XLNX\":{\"avg_total_volume\":3148549,\"calculation_price\":\"close\",\"change\":0,\"change_percent\":0,\"change_percent_s\":\"0.00%\",\"close\":144.59,\"close_time\":1686679370604,\"company_name\":\"Xilinx,
+  Inc.\",\"delayed_price\":146.15,\"delayed_price_time\":1691575642647,\"extended_change_percent\":-0.00102,\"extended_change_percent_s\":\"-0.10%\",\"extended_price\":147.3,\"extended_price_time\":1630452642925,\"high\":148,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1642857527957,\"iex_last_updated_t\":\"2022-01-22
+  05:18:47 -0800\",\"iex_market_percent\":0.06766287928465417,\"iex_realtime_price\":143.77,\"iex_realtime_size\":100,\"iex_volume\":108895,\"latest_price\":148.16,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1661847950274,\"latest_update_t\":\"2022-08-30 01:25:50
+  -0700\",\"latest_volume\":1629728,\"low\":139.3,\"market_cap\":36874459650,\"open\":148,\"open_time\":1701176236340,\"pe_ratio\":47.19,\"previous_close\":147.12,\"primary_exchange\":\"QNADSA\",\"symbol\":\"XLNX\",\"week_52_high\":156.75,\"week_52_low\":99.65,\"ytd_change\":0.006187622458141468},\"SQ\":{\"avg_total_volume\":10633973,\"calculation_price\":\"close\",\"change\":-2.63,\"change_percent\":-0.00974,\"change_percent_s\":\"-0.97%\",\"close\":270.06,\"close_time\":1701449582336,\"company_name\":\"Square
+  Inc - Class A\",\"delayed_price\":264.75,\"delayed_price_time\":1653688554680,\"extended_change_percent\":-0.00264,\"extended_change_percent_s\":\"-0.26%\",\"extended_price\":266.9,\"extended_price_time\":1667736113076,\"high\":273.7,\"iex_ask_price\":0,\"iex_ask_size\":0,\"iex_bid_price\":0,\"iex_bid_size\":0,\"iex_last_updated\":1661975203020,\"iex_last_updated_t\":\"2022-08-31
+  12:46:43 -0700\",\"iex_market_percent\":0.028556771311186883,\"iex_realtime_price\":272.21,\"iex_realtime_size\":35,\"iex_volume\":162348,\"latest_price\":271.56,\"latest_source\":\"Close\",\"latest_time\":\"August
+  17, 2021\",\"latest_update\":1678034699371,\"latest_update_t\":\"2023-03-05 08:44:59
+  -0800\",\"latest_volume\":5817447,\"low\":257.99,\"market_cap\":113750096447,\"open\":273.7,\"open_time\":1638975527663,\"pe_ratio\":237.71,\"previous_close\":264.9,\"primary_exchange\":\"
+  N  CONAICXKSEETOERNC.HKYGW \",\"symbol\":\"SQ\",\"week_52_high\":294.86,\"week_52_low\":139,\"ytd_change\":0.2007328494207873}},\"id\":\"stock-marquee\",\"updatedAt\":1629259696837}\n\n"
+stock_quote_AAPL: "data: {\"current\":152.68,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[154.48000000000002,154.1125,155.7,154.317,152.82,154.875,155.435,154.48000000000002,156.6,155.10000000000002,155.95,154.23,154.5,154.745,153.655,155.45999999999998,155.4845,152.625,152.94,153.795,153.43,153.135,153.37,151.785,154.605,152.54500000000002,153.42000000000002,154.405,152.36599999999999,153.826,156.0,152.43599999999998,155.0325,154.325,154.81,154.34,153.571,153.6375,153.995],\"backgroundColor\":[\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\"],\"borderColor\":[\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":153.59,\"suggestedMin\":153.59}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":153.59,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":151.74,\"id\":\"stock_quote_AAPL\",\"updatedAt\":1629259691545}\n\n"
+stock_quote_TSLA: "data: {\"current\":695.95,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[692.13,690.7349999999999,688.38,680.06,683.712,675.78,688.605,682.6175000000001,690.36,682.675,684.775,682.27,676.74,678.165,677.9549999999999,682.4549999999999,672.56,674.405,672.5999999999999,672.06,669.11,659.9449999999999,672.0550000000001,677.2529999999999,672.14,667.865,668.735,676.2049999999999,681.505,672.595,670.4649999999999,664.191,669.315,676.225,677.765,680.685,680.24,673.29,689.55],\"backgroundColor\":[\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\"],\"borderColor\":[\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":687.98,\"suggestedMin\":687.98}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":687.98,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":675.1700000000001,\"id\":\"stock_quote_TSLA\",\"updatedAt\":1629259692388}\n\n"
+stock_quote_MSFT: "data: {\"current\":294.43,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[300.58500000000004,300.52,301.33,299.675,298.118,298.365,298.755,297.845,300.745,299.44,302.49,298.15999999999997,296.985,296.8,302.155,299.32,296.435,298.1,300.0085,298.18,299.1415,304.94,295.935,300.395,299.4995,298.015,299.575,300.66999999999996,300.365,298.6,299.96500000000003,301.45,304.4475,299.755,300.86,298.595,303.5625,302.195,300.615],\"backgroundColor\":[\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\"],\"borderColor\":[\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":297.01,\"suggestedMin\":297.01}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":297.01,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":292.85720000000003,\"id\":\"stock_quote_MSFT\",\"updatedAt\":1629259693518}\n\n"
+stock_quote_SOFI: "data: {\"current\":14.2,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[14.3245,14.94,14.7765,14.774999999999999,14.605,14.504999999999999,14.684999999999999,14.6,14.45,14.469000000000001,14.2,14.2305,14.2,14.3,14.195,14.085,14.34,0.0,14.41,14.120000000000001,13.885,13.966,14.15,14.112,14.04,14.041,14.0595,14.11,14.215,14.219999999999999,14.24,0.0,14.16,14.0,14.114,14.2,14.235,14.0825,13.908999999999999],\"backgroundColor\":[\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\"],\"borderColor\":[\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":14.12,\"suggestedMin\":14.12}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":14.12,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":13.639999999999999,\"id\":\"stock_quote_SOFI\",\"updatedAt\":1629259694073}\n\n"
+stock_quote_ELY: "data: {\"current\":29.2,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[30.18,30.240000000000002,0.0,30.465,0.0,0.0,30.22,0.0,29.924999999999997,29.647,29.29,29.235,0.0,0.0,0.0,0.0,29.54,0.0,29.58,29.15,29.7,29.15,0.0,29.0,29.14,0.0,0.0,0.0,0.0,0.0,29.533,0.0,0.0,0.0,0.0,29.555,29.189999999999998,29.119500000000002,29.405],\"backgroundColor\":[\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\"],\"borderColor\":[\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":30.5,\"suggestedMin\":30.5}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":30.5,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":28.099999999999998,\"id\":\"stock_quote_ELY\",\"updatedAt\":1629259694897}\n\n"
+stock_quote_AMD: "data: {\"current\":111.25,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[110.155,108.02000000000001,109.84,108.568,108.985,107.9665,109.545,110.44,110.67,109.83,108.9435,110.62,110.425,109.565,111.3035,109.6075,110.03999999999999,109.95500000000001,111.265,110.215,109.87,109.57300000000001,109.265,109.06,109.51650000000001,109.855,111.3,110.25999999999999,109.095,109.13,0.0,110.73349999999999,109.2,110.505,110.47,109.69,110.225,109.36,110.525],\"backgroundColor\":[\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\"],\"borderColor\":[\"rgba(99,
+  255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(99, 255, 174, 1)\",\"rgba(99, 255, 174, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":108.48,\"suggestedMin\":108.48}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":108.48,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":111.33,\"id\":\"stock_quote_AMD\",\"updatedAt\":1629259695447}\n\n"
+stock_quote_XLNX: "data: {\"current\":148.16,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[143.33999999999997,142.8265,143.297,145.05,143.755,143.2,145.31,144.775,146.51,147.52,144.33499999999998,144.996,146.13150000000002,145.44,146.8685,144.34,143.4185,143.975,144.765,145.715,145.20499999999998,143.865,144.01,142.87,0.0,146.93,144.265,146.08499999999998,145.62,146.24,145.96,144.49,144.9085,146.05,146.27800000000002,145.67700000000002,145.61,145.895,145.35],\"backgroundColor\":[\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\"],\"borderColor\":[\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":148,\"suggestedMin\":148}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":148,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"id\":\"stock_quote_XLNX\",\"updatedAt\":1629259696282}\n\n"
+stock_quote_SQ: "data: {\"current\":271.56,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50
+  AM\",\"10 AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11
+  AM\",\"11:10 AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10
+  PM\",\"12:20 PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20
+  PM\",\"1:30 PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30
+  PM\",\"2:40 PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40
+  PM\",\"3:50 PM\"],\"datasets\":[{\"data\":[266.03999999999996,267.405,273.15,263.33500000000004,265.75,265.63,268.19,271.57,269.9625,265.655,268.335,265.70000000000005,266.105,0.0,266.65999999999997,264.495,267.65999999999997,268.095,0.0,266.345,265.695,264.044,264.495,265.86,267.56,263.813,262.608,266.06,270.54999999999995,264.95,266.91999999999996,262.615,265.51,268.525,262.35,268.74,266.17,266.235,268.75],\"backgroundColor\":[\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\"],\"borderColor\":[\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":273.7,\"suggestedMin\":273.7}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":273.7,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":268.93,\"id\":\"stock_quote_SQ\",\"updatedAt\":1629259696837}\n\n"
+! '': "data: {\"current\":29.5,\"labels\":[\"09:30 AM\",\"09:40 AM\",\"09:50 AM\",\"10
+  AM\",\"10:10 AM\",\"10:20 AM\",\"10:30 AM\",\"10:40 AM\",\"10:50 AM\",\"11 AM\",\"11:10
+  AM\",\"11:20 AM\",\"11:30 AM\",\"11:40 AM\",\"11:50 AM\",\"12 PM\",\"12:10 PM\",\"12:20
+  PM\",\"12:30 PM\",\"12:40 PM\",\"12:50 PM\",\"1 PM\",\"1:10 PM\",\"1:20 PM\",\"1:30
+  PM\",\"1:40 PM\",\"1:50 PM\",\"2 PM\",\"2:10 PM\",\"2:20 PM\",\"2:30 PM\",\"2:40
+  PM\",\"2:50 PM\",\"3 PM\",\"3:10 PM\",\"3:20 PM\",\"3:30 PM\",\"3:40 PM\",\"3:50
+  PM\"],\"datasets\":[{\"data\":[30.055,30.36,0.0,30.115000000000002,0.0,0.0,29.93,0.0,30.165,29.0365,29.509999999999998,29.310000000000002,0.0,0.0,0.0,0.0,29.630000000000003,0.0,29.255,29.87,29.55,28.939999999999998,0.0,29.05,29.335,0.0,0.0,0.0,0.0,0.0,29.564500000000002,0.0,0.0,0.0,0.0,29.545,29.884999999999998,28.9585,29.509999999999998],\"backgroundColor\":[\"rgba(99,
+  255, 174, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(99, 255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255,
+  99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(99,
+  255, 174, 0.2)\",\"rgba(255, 99, 132, 0.2)\",\"rgba(255, 99, 132, 0.2)\"],\"borderColor\":[\"rgba(99,
+  255, 174, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255,
+  174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255,
+  99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99,
+  132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\",\"rgba(99, 255, 174,
+  1)\",\"rgba(255, 99, 132, 1)\",\"rgba(255, 99, 132, 1)\"],\"borderWidth\":1,\"fill\":\"origin\",\"pointRadius\":0}],\"options\":{\"title\":{\"display\":false},\"scales\":{\"y\":{\"suggestedMax\":29.8,\"suggestedMin\":29.8}},\"plugins\":{\"annotation\":{\"annotations\":{\"line1\":{\"type\":\"line\",\"scaleID\":\"y\",\"value\":29.8,\"borderColor\":\"rgba(120,
+  120, 120, 0.5)\",\"borderWidth\":2,\"borderDash\":[5,5]}}},\"legend\":{\"display\":false},\"tooltip\":{\"enabled\":false}}},\"last\":28.42,\"id\":null,\"updatedAt\":1629258720294}\n\n"

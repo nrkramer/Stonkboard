@@ -1,4 +1,5 @@
 <script src="assets/marquee3k.min.js"></script>
+<script src="assets/chartjs-plugin-annotation.min.js"></script>
 <script type='text/javascript'>
 $(function() {
   Dashing.widget_base_dimensions = [370, 340]
@@ -19,13 +20,13 @@ $(function() {
     </li>
 
     <% i = 0 %>
-    <% @company_info.each do |symbol, company| %>
+    <% @watchlist.each do |symbol, data| %>
     <li data-row="2" data-col="<%= 2 + i %>" data-sizex="1" data-sizey="1">
       <div data-id="<%= 'stock_quote_' + symbol %>"
            data-view="Stock"
-           data-name="<%= company[:name] %>"
-           data-symbol="<%= company[:symbol] %>"
-           data-image="<%= company[:logo] %>"
+           data-name="<%= data[:company_info][:name] %>"
+           data-symbol="<%= symbol %>"
+           data-image="<%= data[:company_info][:logo] %>"
            style="background-color:#111111;"
            data-prefix="$"></div>
     </li>
