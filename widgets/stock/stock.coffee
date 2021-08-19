@@ -2,18 +2,14 @@ class Dashing.Stock extends Dashing.Widget
   @accessor 'current', Dashing.AnimatedValue
 
   @accessor 'difference', ->
-    if @get('last')
-      last = parseInt(@get('last'))
-      current = parseInt(@get('current'))
-      if last != 0
-        diff = Math.abs(Math.round((current - last) / last * 100))
-        "#{diff}%"
-    else
-      ""
+    change = parseFloat(@get('change'))
+    "#{change}%"
 
   @accessor 'arrow', ->
-    if @get('last')
-      if parseInt(@get('current')) > parseInt(@get('last')) then 'fa fa-arrow-up' else 'fa fa-arrow-down'
+    if parseFloat(@get('change')) < 0 then 'fa fa-arrow-down stock-changedown' else 'fa fa-arrow-up stock-changeup'
+    
+  @accessor 'color', ->
+    if parseFloat(@get('change')) < 0 then 'stock-changedown' else 'stock-changeup'
       
   ready: ->
     # Margins: zero if not set or the same as the opposite margin

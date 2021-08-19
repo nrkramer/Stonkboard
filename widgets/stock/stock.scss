@@ -52,5 +52,13 @@ $moreinfo-color:    rgba(255, 255, 255, 0.8);
         color: rgba(255, 255, 255, 0.5);
         position: relative;
     }
+    
+    .stock-changeup {
+        color: lightgreen;
+    }
+
+    .stock-changedown {
+        color: red;
+    }
 
 }

@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 require 'net/http'
 require 'iex-ruby-client'
+require 'date'
 
-# Track the Stock Value of a company by it’s stock quote shortcut using the 
-# official Finnhub Ruby api
+# Track the value of a company by its stock ticker using the official IEX Ruby api
 # 
 # IEX Free accounts are limited to 50,000 credits
 
@@ -58,7 +58,7 @@ watchlist.each do |symbol, data|
     # Fetch company information
     stats = client.key_stats(symbol)
     logo = client.logo(symbol)
-    puts("Fetched info for " + symbol)
+    puts("Fetched company info for " + symbol)
     
     data[:company_info] = {
         name: stats.company_name,
@@ -70,11 +70,30 @@ before do
     @watchlist = watchlist
 end
 
-SCHEDULER.every '1m', :first_in => 0 do |job|    
+# Fetch market calendar
+SCHEDULER.every '1d', :first_in => 0 do |job|
+    calendar = client.get('/ref-data/us/dates/trade/last', token: iex_secret_key)
+    last_trading_day = Date.parse calendar[0]['date']
+    @trading_today = (Date.today == last_trading_day)    
+end
+
+# Market status
+SCHEDULER.every '1m', :first_in => 0 do |job|
+    if @trading_today
+        market_open = DateTime.parse(Date.today.to_s + " 09:30:00 -05:00")
+        market_close = DateTime.parse(Date.today.to_s + " 16:00:00 -05:00")
+        market_is_open = DateTime.now.between?(market_open, market_close)
+        send_event("market-status", {status: market_is_open})
+    end
+end
+
+# Heartbeat data
+SCHEDULER.every '1m', :first_in => 0 do |job|
     quotes = Hash.new
     
     watchlist.each do |symbol, data|
         quote = client.quote(symbol)
+        
         iexchart = client.chart(symbol, '1d', chart_interval: 10)
         
         # Chart data
@@ -98,6 +117,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
         
         widgetData = {
             current: quote.latest_price,
+            change: quote.change_percent.round(2),
             labels: labels,
             datasets: [ chartdata ],
             options: {
@@ -132,9 +152,6 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                 }
             }
         }
-        if quote.change != 0.0
-            widgetData[:last] = quote.latest_price + quote.change
-        end
         
         send_event(data[:widget_id], widgetData)
         
