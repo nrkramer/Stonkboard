@@ -1,0 +1,39 @@
+{
+    "SPY" : {
+        "chart" : true
+    },
+    "AAPL" : {
+        "chart" : true
+    },
+    "TSLA" : {
+        "chart" : true
+    },
+    "MSFT" : {
+        "chart" : true
+    },
+    "SOFI" : {
+        "chart" : true
+    },
+    "AMD" : {
+        "chart" : true
+    },
+    "XLNX" : {
+        "chart" : true
+    },
+    "SQ" : {},
+    "LCID" : {},
+    "CARR" : {},
+    "PLTR" : {},
+    "NIO" : {},
+    "NVDA" : {},
+    "ETSY" : {},
+    "AMZN" : {},
+    "BA" : {},
+    "SAVE" : {},
+    "GOOG" : {},
+    "DIS" : {},
+    "ENPH" : {},
+    "ROKU" : {},
+    "TSP" : {},
+    "UPST" : {}
+}

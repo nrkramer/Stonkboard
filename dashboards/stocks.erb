@@ -20,7 +20,7 @@ $(function() {
     </li>
 
     <% i = 0 %>
-    <% @watchlist.each do |symbol, data| %>
+    <% @watchlist.first(3).each do |symbol, data| %>
     <li data-row="2" data-col="<%= 2 + i %>" data-sizex="1" data-sizey="1">
       <div data-id="<%= 'stock_quote_' + symbol %>"
            data-view="Stock"
@@ -32,12 +32,25 @@ $(function() {
     </li>
     
     <% i += 1 %>
-    <% if i == 3 then break end %>
     <% end %>
 
     <li data-row="2" data-col="5" data-sizex="1" data-sizey="2">
       <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
     </li>
+    
+    <% for i in 2..6 %>
+    <% symbol = @watchlist.keys[i] %>
+    <% data = @watchlist.values[i] %>
+    <li data-row="3" data-col="<%= 0 + i - 2 %>" data-sizex="1" data-sizey="1">
+      <div data-id="<%= 'stock_quote_' + symbol %>"
+           data-view="Stock"
+           data-name="<%= data[:company_info][:name] %>"
+           data-symbol="<%= symbol %>"
+           data-image="<%= data[:company_info][:logo] %>"
+           style="background-color:#111111;"
+           data-prefix="$"></div>
+    </li>
+    <% end %>
     
   </ul>
   <center>

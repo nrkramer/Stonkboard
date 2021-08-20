@@ -2,6 +2,7 @@
 require 'net/http'
 require 'iex-ruby-client'
 require 'date'
+require 'json'
 
 # Track the value of a company by its stock ticker using the official IEX Ruby api
 # 
@@ -14,14 +15,7 @@ require 'date'
 
 # Read in watchlist
 watchlist_file = ENV['WATCHLIST_FILE']
-watchlist_raw = File.read(watchlist_file)
-watchlist = Hash.new
-watchlist_raw.each_line do |line|
-    line = line.strip
-    if line != '' then
-        watchlist[line] = {}
-    end
-end
+watchlist = JSON.parse(File.read(watchlist_file))
 
 # Read in API key
 iex_api_key_file = ENV['IEX_API_KEY_FILE']
@@ -84,6 +78,7 @@ end
 # Market status
 SCHEDULER.every '1m', :first_in => 0 do |job|
     if @trading_today
+        # TODO: Adjust market open and close based on short trading days
         market_open = DateTime.parse(Date.today.to_s + " 09:30:00 -04:00")
         market_close = DateTime.parse(Date.today.to_s + " 16:00:00 -04:00")
         @market_is_open = DateTime.now.between?(market_open, market_close)
@@ -117,44 +112,47 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
         
         watchlist.each do |symbol, data|
             quote = client.quote(symbol)
-            
-            iexchart = Hash.new
-            using_intraday = @market_is_open
-            if using_intraday
-                iexchart = client.get('/stock/' + symbol + '/intraday-prices', 
-                    chartIEXOnly: true,
-                    chartSimplify: true,
-                    token: iex_secret_key
-                )
-            else
-                iexchart = client.chart(symbol, '1d', chart_interval: 10)
-            end
+            chartdata = {}
             
             # Chart data
-            chartdata = {
-               data: Array.new(),
-               backgroundColor: Array.new(),
-               borderColor: Array.new(),
-               borderWidth: 1,
-               fill: 'origin',
-               pointRadius: 0
-            }
+            if data['chart'] then
+                iexchart = Hash.new
+                using_intraday = @market_is_open
+                if using_intraday
+                    iexchart = client.get('/stock/' + symbol + '/intraday-prices', 
+                        chartIEXOnly: true,
+                        chartSimplify: true,
+                        token: iex_secret_key
+                    )
+                else
+                    iexchart = client.chart(symbol, '1d', chart_interval: 10)
+                end
+                
+                chartdata = {
+                   data: Array.new(),
+                   backgroundColor: Array.new(),
+                   borderColor: Array.new(),
+                   borderWidth: 1,
+                   fill: 'origin',
+                   pointRadius: 0
+                }
 
-            dp_i = 0
-            for label in chart_labels do
-                if dp_i < iexchart.length and iexchart[dp_i]['label'] == label then
-                    dp = iexchart[dp_i]
-                    avgPrice = if using_intraday then dp['average'] else (dp.high + dp.low) / 2.0 end
-                    if avgPrice and avgPrice != 0 then
-                        chartdata[:data].append(avgPrice)
-                        chartdata[:backgroundColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
-                        chartdata[:borderColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
+                dp_i = 0
+                for label in chart_labels do
+                    if dp_i < iexchart.length and iexchart[dp_i]['label'] == label then
+                        dp = iexchart[dp_i]
+                        avgPrice = if using_intraday then dp['average'] else (dp.high + dp.low) / 2.0 end
+                        if avgPrice and avgPrice != 0 then
+                            chartdata[:data].append(avgPrice)
+                            chartdata[:backgroundColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
+                            chartdata[:borderColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
+                        else
+                            chartdata[:data].append(nil);
+                        end
+                        dp_i += 1
                     else
                         chartdata[:data].append(nil);
                     end
-                    dp_i += 1
-                else
-                    chartdata[:data].append(nil);
                 end
             end
             
