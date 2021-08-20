@@ -92,6 +92,24 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
     end
 end
 
+# Create date labels
+# 390 minutes in a regular trading day
+chart_labels = []
+now = Time.now
+t = Time.new(now.year, now.month, now.day, 9, 30, 0)
+(0..390).each do |n|
+    if t.min == 0 then
+        chart_labels.append(t.strftime('%l %p').strip)
+    else 
+        if (t.strftime('%p') == 'PM') then
+            chart_labels.append(t.strftime('%l:%M %p').strip)
+        else
+            chart_labels.append(t.strftime('%I:%M %p').strip)
+        end
+    end
+    t += 60
+end
+
 # Heartbeat data
 SCHEDULER.every '1m', :first_in => 0 do |job|
     if @market_is_open or @first_data_fetch
@@ -113,7 +131,6 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
             end
             
             # Chart data
-            labels = []
             chartdata = {
                data: Array.new(),
                backgroundColor: Array.new(),
@@ -122,21 +139,29 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                fill: 'origin',
                pointRadius: 0
             }
-            borderWidth = 1
-            for dp in iexchart
-                avgPrice = if using_intraday then dp['average'] else (dp.high + dp.low) / 2.0 end
-                if avgPrice
-                    labels.append(dp['label'])
-                    chartdata[:data].append(avgPrice)
-                    chartdata[:backgroundColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
-                    chartdata[:borderColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
+
+            dp_i = 0
+            for label in chart_labels do
+                if dp_i < iexchart.length and iexchart[dp_i]['label'] == label then
+                    dp = iexchart[dp_i]
+                    avgPrice = if using_intraday then dp['average'] else (dp.high + dp.low) / 2.0 end
+                    if avgPrice and avgPrice != 0 then
+                        chartdata[:data].append(avgPrice)
+                        chartdata[:backgroundColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
+                        chartdata[:borderColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
+                    else
+                        chartdata[:data].append(nil);
+                    end
+                    dp_i += 1
+                else
+                    chartdata[:data].append(nil);
                 end
             end
             
             widgetData = {
                 current: quote.latest_price,
                 change: quote.change_percent.round(2),
-                labels: labels,
+                labels: chart_labels,
                 datasets: [ chartdata ],
                 options: {
                     title: {
@@ -148,6 +173,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                             suggestedMin: quote.open
                         }
                     },
+                    spanGaps: true,
                     plugins: {
                         annotation: {
                             annotations: {
