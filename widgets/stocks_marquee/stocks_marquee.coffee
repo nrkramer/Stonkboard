@@ -1,4 +1,4 @@
-class Dashing.Marquee extends Dashing.Widget
+class Dashing.StocksMarquee extends Dashing.Widget
     
     initialized = false
     
