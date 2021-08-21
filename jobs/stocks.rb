@@ -6,7 +6,7 @@ require 'json'
 
 # Track the value of a company by its stock ticker using the official IEX Ruby api
 # 
-# IEX Free accounts are limited to 50,000 credits
+# IEX Free accounts are limited to 50,000 credits, this job attempts to save as many as possible
 
 # Config
 # ------
@@ -87,6 +87,29 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
     end
 end
 
+# Market movers
+SCHEDULER.every '3h', :first_in => 0 do |job|
+    if @trading_today or @first_data_fetch
+        market_gainers = client.stock_market_list(:gainers, listLimit: 5)
+        market_losers = client.stock_market_list(:losers, listLimit: 5)
+        market_movers = []
+        market_gainers.each do |quote|
+            market_movers.append({
+                label: quote.symbol,
+                value: quote.change_percent_s + ' ($' + quote.latest_price.to_s + ')',
+            })
+        end
+        market_losers = market_losers.reverse
+        market_losers.each do |quote|
+            market_movers.append({
+                label: quote.symbol,
+                value: quote.change_percent_s + ' ($' + quote.latest_price.to_s + ')',
+            })
+        end
+        send_event('market-movers', { items: market_movers })
+    end
+end
+
 # Create date labels
 # 390 minutes in a regular trading day
 chart_labels = []
@@ -158,7 +181,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
             
             widgetData = {
                 current: quote.latest_price,
-                change: quote.change_percent.round(2),
+                change: (quote.change_percent * 100.0).round(2),
                 labels: chart_labels,
                 datasets: [ chartdata ],
                 options: {
