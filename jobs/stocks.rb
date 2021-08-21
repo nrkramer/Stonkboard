@@ -90,13 +90,14 @@ end
 # Market movers
 SCHEDULER.every '3h', :first_in => 0 do |job|
     if @trading_today or @first_data_fetch
-        market_gainers = client.stock_market_list(:gainers, listLimit: 5)
-        market_losers = client.stock_market_list(:losers, listLimit: 5)
+        market_gainers = client.stock_market_list(:gainers, listLimit: 8)
+        market_losers = client.stock_market_list(:losers, listLimit: 8)
         market_movers = []
         market_gainers.each do |quote|
             market_movers.append({
                 label: quote.symbol,
                 value: quote.change_percent_s + ' ($' + quote.latest_price.to_s + ')',
+                color: 'rgba(99, 255, 174, 1)'
             })
         end
         market_losers = market_losers.reverse
@@ -104,6 +105,7 @@ SCHEDULER.every '3h', :first_in => 0 do |job|
             market_movers.append({
                 label: quote.symbol,
                 value: quote.change_percent_s + ' ($' + quote.latest_price.to_s + ')',
+                color: 'rgba(255, 99, 132, 1)'
             })
         end
         send_event('market-movers', { items: market_movers })
