@@ -1,6 +1,8 @@
 # Stonkboard
 Buy high, sell low.
 
+![stonkboard](https://user-images.githubusercontent.com/11186620/130344362-ac8eb874-425b-4a56-8099-a61456a28b69.png)
+
 ## Description
 Stonkboard is a stock dashboard developed to look similar to the iOS stocks app. It includes four widgets:
 - The "marquee" ticker-tape at the top
@@ -70,11 +72,8 @@ Second, change the `watchlist.json` to include whatever tickers you're intereste
     "AAPL" : {},
     "AMD" : { "chart" : true },
     "MSFT" : {}
-    etc...
 }
 ```
-
-## Preview
 
 ## Contributing
 
