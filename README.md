@@ -66,7 +66,7 @@ IEX_API_PUBLIC_KEY=<PUBLISHABLE_KEY>
 
 ### Watchlist
 
-Second, change the `watchlist.json` to include whatever tickers you're interested in. The more tickers, the more quote data is pulled every minute. Any ticker with `"chart": true` set will pull chart data during market hours. The empty dictionary for tickers not using chart data is mandatory. Example:
+Second, change the `watchlist.json` to include whatever tickers you're interested in. The more tickers, the more quote data is pulled every minute during market hours. Any ticker with `"chart": true` set will pull chart data during market hours. The empty dictionary for tickers not using chart data is mandatory. Example:
 ```json
 {
     "AAPL" : {},
