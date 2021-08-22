@@ -8,7 +8,7 @@ Stonkboard is a stock dashboard developed to look similar to the iOS stocks app.
 - The "marquee" ticker-tape at the top
 - An individual stock widget, that displays a minute graph of the stock
 - A market status widget, that displays if the US stock market is open or not (could easily be adapted for other markets)
-- A "market movers" widget, that displays the top 5 gainers and top 5 losers
+- A "market movers" widget, that displays the top 7 gainers and top 7 losers
 
 Stonkboard uses [Smashing](https://github.com/Smashing/smashing/wiki) as its dashboard generator/webserver.
 
