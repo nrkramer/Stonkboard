@@ -44,20 +44,8 @@ end
 
 client = IEX::Api::Client.new
 
-puts("Fetching ticker info... ")
 watchlist.each do |symbol, data|
-    data[:widget_id] = 'stock_quote_' + symbol
-    data[:company_info] = Hash.new
-
-    # Fetch company information
-    stats = client.key_stats(symbol)
-    logo = client.logo(symbol)
-    puts("Fetched company info for " + symbol)
-    
-    data[:company_info] = {
-        name: stats.company_name,
-        logo: logo.url
-    }
+    watchlist[symbol][:widget_id] = 'stock_quote_' + symbol
 end
 
 @first_data_fetch = true
@@ -132,6 +120,25 @@ end
 
 # Heartbeat data
 SCHEDULER.every '1m', :first_in => 0 do |job|
+    if @first_data_fetch
+        puts("Fetching ticker info... ")
+        watchlist.each do |symbol, data|
+            watchlist[symbol][:company_info] = Hash.new
+
+            # Fetch company information
+            stats = client.key_stats(symbol)
+            logo = client.logo(symbol)
+            puts("Fetched company info for " + symbol)
+            
+            watchlist[symbol][:company_info] = {
+                name: stats.company_name,
+                image: logo.url
+            }
+            
+            send_event(watchlist[symbol][:widget_id], watchlist[symbol][:company_info])
+        end
+    end
+
     if @market_is_open or @first_data_fetch
         quotes = Hash.new
         
@@ -226,8 +233,8 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
         end
         
         send_event("stock-marquee", {quotes: quotes})
-        
-        @first_data_fetch = false
     end
+    
+    @first_data_fetch = false
 end
 
