@@ -54,7 +54,7 @@ Secret key must be on line 1, and publishable key on line 2:
 <SECRET_KEY>
 <PUBLISHABLE_KEY>
 ```
-Then set the environment variable `IEX_API_KEY_FILE` to point towards the file location.
+Then set the environment variable `IEX_API_KEY_FILE` to point towards the file location. `start.sh` has this set to "iex_sandbox_api_key" by default.
 
 #### Environment Variables
 
@@ -65,6 +65,8 @@ IEX_API_PUBLIC_KEY=<PUBLISHABLE_KEY>
 ```
 
 ### Watchlist
+
+First, the server looks for the file pointed to by the environment variable `WATCHLIST_FILE`. By default `start.sh` has this set to "watchlist.json".
 
 Second, change the `watchlist.json` to include whatever tickers you're interested in. The more tickers, the more quote data is pulled every minute during market hours. Any ticker with `"chart": true` set will pull chart data during market hours. The empty dictionary for tickers not using chart data is mandatory. Example:
 ```json
