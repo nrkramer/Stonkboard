@@ -134,8 +134,6 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                 name: stats.company_name,
                 image: logo.url
             }
-            
-            send_event(watchlist[symbol][:widget_id], watchlist[symbol][:company_info])
         end
     end
 
@@ -225,7 +223,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                         }
                     }
                 }
-            }
+            }.merge(watchlist[symbol][:company_info])
             
             send_event(data[:widget_id], widgetData)
             

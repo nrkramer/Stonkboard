@@ -19,32 +19,27 @@ $(function() {
       <div data-id="market-status" data-view="Text" data-text="Market is closed" style="background-color:#111111;"></div>
     </li>
 
-    <% i = 0 %>
-    <% @watchlist.first(3).each do |symbol, data| %>
+    <% for i in (0..2) %>
+    <% symbol = @watchlist.keys[i] %>
     <li data-row="2" data-col="<%= 2 + i %>" data-sizex="1" data-sizey="1">
       <div data-id="<%= 'stock_quote_' + symbol %>"
            data-view="Stock"
            data-symbol="<%= symbol %>"
            style="background-color:#111111;"
            data-prefix="$"></div>
-    </li>
-    
-    <% i += 1 %>
+    </li>    
     <% end %>
 
     <li data-row="2" data-col="5" data-sizex="1" data-sizey="2">
       <div data-id="market-movers" data-view="StocksMovers" data-unordered="true" data-title="Market Movers"></div>
     </li>
     
-    <% for i in 2..6 %>
+    <% for i in (2..6) %>
     <% symbol = @watchlist.keys[i] %>
-    <% data = @watchlist.values[i] %>
     <li data-row="3" data-col="<%= 0 + i - 2 %>" data-sizex="1" data-sizey="1">
       <div data-id="<%= 'stock_quote_' + symbol %>"
            data-view="Stock"
-           data-name="<%= data[:company_info][:name] %>"
            data-symbol="<%= symbol %>"
-           data-image="<%= data[:company_info][:logo] %>"
            style="background-color:#111111;"
            data-prefix="$"></div>
     </li>

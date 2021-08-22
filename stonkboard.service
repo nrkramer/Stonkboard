@@ -1,13 +1,18 @@
 [Unit]
-Description=A Stonkboard to help buy the stonks
-After=syslog.target network.target multi-user.target lightdm.service
+Description=Stonkboard helps buy the stonks
+After=multi-user.target
+After=network.target
+After=network-online.target
 
 [Service]
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/pi/.Xauthority
 Type=simple
+User=pi
+Group=pi
 StandardOutput=journal
-TimeoutStartSec=0
 WorkingDirectory=/home/pi/Documents/Stonkboard
-ExecStart=/home/pi/Documents/Stonkboard/start.sh
+ExecStart=/bin/bash /home/pi/Documents/Stonkboard/start.sh
 
 [Install]
-WantedBy=multi-user.target
+WantedBy=graphical.target
