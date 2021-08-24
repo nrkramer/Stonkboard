@@ -168,14 +168,15 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                 }
 
                 dp_i = 0
+                open = quote.open
                 for label in chart_labels do
                     if dp_i < iexchart.length and iexchart[dp_i]['label'] == label then
                         dp = iexchart[dp_i]
                         avgPrice = if using_intraday then dp['average'] else (dp.high + dp.low) / 2.0 end
                         if avgPrice and avgPrice != 0 then
                             chartdata[:data].append(avgPrice)
-                            chartdata[:backgroundColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
-                            chartdata[:borderColor].append(if avgPrice >= quote.open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
+                            chartdata[:backgroundColor].append(if avgPrice >= open then 'rgba(99, 255, 174, 0.2)' else 'rgba(255, 99, 132, 0.2)' end)
+                            chartdata[:borderColor].append(if avgPrice >= open then 'rgba(99, 255, 174, 1)' else 'rgba(255, 99, 132, 1)' end)
                         else
                             chartdata[:data].append(nil);
                         end
@@ -197,8 +198,8 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                     },
                     scales: {
                         y: {
-                            suggestedMax: quote.open,
-                            suggestedMin: quote.open
+                            suggestedMax: open,
+                            suggestedMin: open
                         }
                     },
                     spanGaps: true,
@@ -208,7 +209,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
                                 line1: {
                                     type: 'line',
                                     scaleID: 'y',
-                                    value: quote.open,
+                                    value: open,
                                     borderColor: 'rgba(120, 120, 120, 0.5)',
                                     borderWidth: 2,
                                     borderDash: [5, 5]
