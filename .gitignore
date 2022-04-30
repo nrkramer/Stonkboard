@@ -1,3 +1,7 @@
+# Stonkboard files
+history.yml
+Gemfile.lock
+
 raw
 presentation
 test.coffee
