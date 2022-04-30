@@ -7,7 +7,7 @@ SCRIPTPATH=$(dirname $(readlink -f "$0"))
 #echo "@xset s noblank" >> $AUTOSTART
 
 # Install dependencies
-sudo apt install node unclutter chromium-browser
+sudo apt install nodejs unclutter chromium-browser
 
 # Install gems
 sudo gem install bundler smashing rufus-scheduler thin

@@ -17,11 +17,10 @@
     "AMD" : {
         "chart" : true
     },
-    "XLNX" : {
-        "chart" : true
-    },
     "SQ" : {},
-    "LCID" : {},
+    "LCID" : {
+	"chart" : true
+    },
     "CARR" : {},
     "PLTR" : {},
     "NIO" : {},
