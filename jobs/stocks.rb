@@ -4,8 +4,6 @@ require 'iex-ruby-client'
 require 'date'
 require 'json'
 
-# Track the value of a company by its stock ticker using the official IEX Ruby api
-# 
 # IEX Free accounts are limited to 50,000 credits, this job attempts to save as many as possible
 
 # Config

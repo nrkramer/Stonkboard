@@ -4,8 +4,8 @@ set -e
 
 SCRIPTPATH=$(dirname $(readlink -f "$0"))
 
-export WATCHLIST_FILE=`pwd`/watchlist.json
-export IEX_API_KEY_FILE=`pwd`/iex_sandbox_api_key
+export WATCHLIST_PATH=`pwd`/watchlist.json
+export IEX_CONFIG_PATH=`pwd`/iex_sandbox
 
 export FONTCONFIG_PATH=/etc/fonts
 export GEM_HOME=$HOME/.gem

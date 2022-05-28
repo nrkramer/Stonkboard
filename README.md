@@ -49,24 +49,26 @@ First, you need to get an IEX secret and publishable API key from [IEX Cloud](ht
 
 #### File
 
-Secret key must be on line 1, and publishable key on line 2:
+Endpoint must be on line 1, secret key must be on line 2, and publishable key on line 3:
 ```
-<SECRET_KEY>
-<PUBLISHABLE_KEY>
+<ENDPOINT URL>     (e.g https://sandbox.iexapis.com/v1)
+<SECRET_KEY>       (e.g. tks_abcde12345)
+<PUBLISHABLE_KEY>  (e.g. tkp_abcde12345)
 ```
-Then set the environment variable `IEX_API_KEY_FILE` to point towards the file location. `start.sh` has this set to "iex_sandbox_api_key" by default.
+Then set the environment variable `IEX_CONFIG_PATH` to point towards the file location. `start.sh` has this set to "iex_sandbox" by default.
 
 #### Environment Variables
 
-Simply set the two environment variables correspondingly:
+Simply set the environment variables correspondingly:
 ```
+IEX_ENDPOINT=<ENDPOINT URL>
 IEX_API_SECRET_KEY=<SECRET_KEY>
 IEX_API_PUBLIC_KEY=<PUBLISHABLE_KEY>
 ```
 
 ### Watchlist
 
-First, the server looks for the file pointed to by the environment variable `WATCHLIST_FILE`. By default `start.sh` has this set to "watchlist.json".
+First, the server looks for the file pointed to by the environment variable `WATCHILIST_PATH`. By default `start.sh` has this set to "watchlist.json".
 
 Second, change the `watchlist.json` to include whatever tickers you're interested in. The more tickers, the more quote data is pulled every minute during market hours. Any ticker with `"chart": true` set will pull chart data during market hours. The empty dictionary for tickers not using chart data is mandatory. Example:
 ```json

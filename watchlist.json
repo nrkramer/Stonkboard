@@ -1,38 +1,41 @@
 {
-    "SPY" : {
-        "chart" : true
-    },
-    "AAPL" : {
-        "chart" : true
-    },
-    "TSLA" : {
-        "chart" : true
-    },
-    "MSFT" : {
-        "chart" : true
-    },
-    "SOFI" : {
-        "chart" : true
-    },
-    "AMD" : {
-        "chart" : true
-    },
-    "SQ" : {},
-    "LCID" : {
-	"chart" : true
-    },
-    "CARR" : {},
-    "PLTR" : {},
-    "NIO" : {},
-    "NVDA" : {},
-    "ETSY" : {},
-    "AMZN" : {},
-    "BA" : {},
-    "SAVE" : {},
-    "GOOG" : {},
-    "DIS" : {},
-    "ENPH" : {},
-    "ROKU" : {},
-    "TSP" : {},
-    "UPST" : {}
+    "chartUpdateInterval" : 1,
+    "stocks" : {
+        "SPY" : {
+            "chart" : true
+        },
+        "AAPL" : {
+            "chart" : true
+        },
+        "TSLA" : {
+            "chart" : true
+        },
+        "MSFT" : {
+            "chart" : true
+        },
+        "SOFI" : {
+            "chart" : true
+        },
+        "AMD" : {
+            "chart" : true
+        },
+        "SQ" : {},
+        "LCID" : {
+            "chart" : true
+        },
+        "CARR" : {},
+        "PLTR" : {},
+        "NIO" : {},
+        "NVDA" : {},
+        "ETSY" : {},
+        "AMZN" : {},
+        "BA" : {},
+        "SAVE" : {},
+        "GOOG" : {},
+        "DIS" : {},
+        "ENPH" : {},
+        "ROKU" : {},
+        "TSP" : {},
+        "UPST" : {}
+    }
 }
